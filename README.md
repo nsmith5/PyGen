@@ -1,5 +1,9 @@
 # PyGen
 
+|  **Build Status**         |  **Coverage**                |
+|:-------------------------:|:----------------------------:|
+|[![travis-img]][travis-url]|[![codecov-img]][codecov-url] |
+
 Python generators are great, Julia is great. Why compromise? 
 
 ```julia
@@ -31,3 +35,9 @@ julia> for i in fibonacci()
 ```
 
 Voila! Generators without all the ceremony!
+
+[codecov-img]: https://codecov.io/gh/nsmith5/PyGen.jl/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/nsmith5/PyGen.jl
+
+[travis-img]: https://travis-ci.org/nsmith5/PyGen.jl.svg?branch=master
+[travis-url]: https://travis-ci.org/nsmith5/PyGen.jl
