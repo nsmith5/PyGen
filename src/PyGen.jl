@@ -1,6 +1,6 @@
 module PyGen
 
-export pygen
+export @pygen
 #=
     @pygen is a macro that allows for python like generator functions.
 The idea is that a function like this:
