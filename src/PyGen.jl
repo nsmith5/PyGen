@@ -40,14 +40,16 @@ end
 """
     @pygen
 
-Making julie walking a little *more* like python. Stick the @pygen macro in front of a 
-function declaration and you can use `yield` statements to make a python style
+Making julie walking a little *more* like python. Stick 
+the @pygen macro in front of a function declaration and
+you can use `yield` statements to make a python style
 generator! 
 """
 macro pygen(f)
     f′ = replace(f, yregex, asput)
     lines = f′ |> IOBuffer |> readlines
-    insert!(lines, 2, "function γ(c::Channel)")
+    ind = findfirst(x -> contains(x, "function"), lines)    
+    insert!(lines, ind + 1, "function γ(c::Channel)")
     push!(lines, "return Channel(γ)\nend")
     return join(lines, "\n") |> parse |> esc 
 end
