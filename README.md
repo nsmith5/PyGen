@@ -1,8 +1,4 @@
-# PyGen
-
-|  **Build Status**         |  **Coverage**                |
-|:-------------------------:|:----------------------------:|
-|[![travis-img]][travis-url]|[![codecov-img]][codecov-url] |
+# PyGen  [![travis-img]][travis-url] [![codecov-img]][codecov-url]
 
 Python generators are great, Julia is great. Why compromise? 
 
