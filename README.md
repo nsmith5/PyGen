@@ -1,3 +1,6 @@
+**IMPORANT: See the [ResumableFunctions](https://github.com/BenLauwens/ResumableFunctions.jl) package 
+for a performant and more complete implementation of this concept**
+
 # PyGen  [![travis-img]][travis-url] [![codecov-img]][codecov-url]
 
 Python generators are great, Julia is great. Why compromise? 
